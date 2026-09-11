@@ -1,9 +1,10 @@
 {
-  "name": "website-starter",
+  "name": "__name__",
   "type": "module",
   "version": "0.0.0",
   "private": true,
   "packageManager": "pnpm@10.25.0",
+  "description": "__description__",
   "license": "MIT",
   "engines": {
     "node": ">=22.18.0"
@@ -11,8 +12,8 @@
   "scripts": {
     "dev": "concurrently -k -n packages,client,server -c yellow,cyan,magenta \"pnpm dev:packages\" \"pnpm dev:client\" \"pnpm dev:server\"",
     "dev:packages": "pnpm -F './packages/*' --parallel dev",
-    "dev:client": "pnpm -F @website-starter/client dev",
-    "dev:server": "pnpm -F @website-starter/server dev",
+    "dev:client": "pnpm -F @__name__/client dev",
+    "dev:server": "pnpm -F @__name__/server dev",
     "build": "pnpm -r build",
     "test": "vitest run",
     "test:watch": "vitest",

@@ -8,7 +8,7 @@ A minimal fullstack monorepo starter with Nuxt 4, NestJS 12, TypeScript, Drizzle
 pnpm install
 cp apps/server/.env.example apps/server/.env
 docker compose up -d
-pnpm -F @website-starter/server db:push
+pnpm -F @__name__/server db:push
 ```
 
 Requires running MySQL and Redis instances (docker-compose included, connection settings live in `apps/server/.env`).
@@ -40,10 +40,10 @@ pnpm typecheck                    # typecheck all workspaces
 ## Database
 
 ```bash
-pnpm -F @website-starter/server db:generate  # generate migration from schema
-pnpm -F @website-starter/server db:migrate   # apply migrations
-pnpm -F @website-starter/server db:push      # push schema directly to database
-pnpm -F @website-starter/server db:studio    # open Drizzle Studio
+pnpm -F @__name__/server db:generate  # generate migration from schema
+pnpm -F @__name__/server db:migrate   # apply migrations
+pnpm -F @__name__/server db:push      # push schema directly to database
+pnpm -F @__name__/server db:studio    # open Drizzle Studio
 ```
 
 ## Structure

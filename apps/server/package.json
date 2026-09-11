@@ -1,5 +1,5 @@
 {
-  "name": "@website-starter/server",
+  "name": "@__name__/server",
   "type": "module",
   "version": "0.0.1",
   "private": true,
@@ -25,6 +25,7 @@
     "db:studio": "drizzle-kit studio"
   },
   "dependencies": {
+    "@__name__/shared": "workspace:*",
     "@nestjs/common": "catalog:",
     "@nestjs/config": "catalog:",
     "@nestjs/core": "catalog:",
@@ -32,7 +33,6 @@
     "@nestjs/jwt": "catalog:",
     "@nestjs/passport": "catalog:",
     "@nestjs/platform-express": "catalog:",
-    "@website-starter/shared": "workspace:*",
     "bcryptjs": "catalog:",
     "dotenv": "catalog:",
     "drizzle-orm": "catalog:",

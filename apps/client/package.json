@@ -1,5 +1,5 @@
 {
-  "name": "@website-starter/client",
+  "name": "@__name__/client",
   "type": "module",
   "private": true,
   "scripts": {
@@ -13,9 +13,9 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "@__name__/shared": "workspace:*",
     "@lucide/vue": "catalog:",
     "@vueuse/core": "catalog:",
-    "@website-starter/shared": "workspace:*",
     "class-variance-authority": "catalog:",
     "clsx": "catalog:",
     "nuxt": "catalog:",

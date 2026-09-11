@@ -1,6 +1,6 @@
-import type { LoginInput } from '@website-starter/shared'
+import type { LoginInput } from '@__name__/shared'
 import type { ApiResponse } from '@/lib/api'
-import { encryptPassword } from '@website-starter/shared'
+import { encryptPassword } from '@__name__/shared'
 import { $api, authToken } from '@/lib/api'
 
 export interface UserInfo {

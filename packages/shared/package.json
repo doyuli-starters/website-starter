@@ -1,5 +1,5 @@
 {
-  "name": "@website-starter/shared",
+  "name": "@__name__/shared",
   "type": "module",
   "version": "0.0.0",
   "private": true,

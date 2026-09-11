@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { loginSchema } from '@__name__/shared'
 import {
   ArrowRight,
   Eye,
@@ -11,7 +12,6 @@ import {
   Sun,
 } from '@lucide/vue'
 import { useDark, useToggle } from '@vueuse/core'
-import { loginSchema } from '@website-starter/shared'
 import { toast } from 'vue-sonner'
 import { Button } from '@/components/ui/button'
 import {
