@@ -1,0 +1,46 @@
+{
+  "name": "website-starter",
+  "type": "module",
+  "version": "0.0.0",
+  "private": true,
+  "packageManager": "pnpm@10.25.0",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22.18.0"
+  },
+  "scripts": {
+    "dev": "concurrently -k -n packages,client,server -c yellow,cyan,magenta \"pnpm dev:packages\" \"pnpm dev:client\" \"pnpm dev:server\"",
+    "dev:packages": "pnpm -F './packages/*' --parallel dev",
+    "dev:client": "pnpm -F @website-starter/client dev",
+    "dev:server": "pnpm -F @website-starter/server dev",
+    "build": "pnpm -r build",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:client": "vitest run --project client",
+    "test:server": "vitest run --project server",
+    "lint": "eslint",
+    "lint:fix": "eslint --fix",
+    "typecheck": "pnpm -r typecheck",
+    "postinstall": "simple-git-hooks"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "catalog:",
+    "@types/node": "catalog:",
+    "concurrently": "catalog:",
+    "eslint": "catalog:",
+    "eslint-plugin-format": "catalog:",
+    "lint-staged": "catalog:",
+    "picocolors": "catalog:",
+    "simple-git-hooks": "catalog:",
+    "tsdown": "catalog:",
+    "typescript": "catalog:",
+    "vitest": "catalog:"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "pnpm lint-staged",
+    "commit-msg": "node scripts/verify-commit.js"
+  },
+  "lint-staged": {
+    "*": "eslint --fix"
+  }
+}

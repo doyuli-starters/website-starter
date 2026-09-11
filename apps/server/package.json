@@ -1,0 +1,58 @@
+{
+  "name": "@website-starter/server",
+  "type": "module",
+  "version": "0.0.1",
+  "private": true,
+  "description": "NestJS API for website-starter",
+  "license": "MIT",
+  "imports": {
+    "#/*": [
+      "./dist/*"
+    ]
+  },
+  "scripts": {
+    "dev": "nest start --watch",
+    "build": "nest build",
+    "start": "nest start",
+    "start:debug": "nest start --debug --watch",
+    "start:prod": "node dist/main.js",
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "drizzle-kit migrate",
+    "db:push": "drizzle-kit push",
+    "db:studio": "drizzle-kit studio"
+  },
+  "dependencies": {
+    "@nestjs/common": "catalog:",
+    "@nestjs/config": "catalog:",
+    "@nestjs/core": "catalog:",
+    "@nestjs/event-emitter": "catalog:",
+    "@nestjs/jwt": "catalog:",
+    "@nestjs/passport": "catalog:",
+    "@nestjs/platform-express": "catalog:",
+    "@website-starter/shared": "workspace:*",
+    "bcryptjs": "catalog:",
+    "dotenv": "catalog:",
+    "drizzle-orm": "catalog:",
+    "ioredis": "catalog:",
+    "mysql2": "catalog:",
+    "nestjs-zod": "catalog:",
+    "passport-jwt": "catalog:",
+    "reflect-metadata": "catalog:",
+    "rxjs": "catalog:",
+    "winston": "catalog:",
+    "zod": "catalog:"
+  },
+  "devDependencies": {
+    "@nestjs/cli": "catalog:",
+    "@nestjs/testing": "catalog:",
+    "@types/express": "catalog:",
+    "@types/node": "catalog:",
+    "@types/passport-jwt": "catalog:",
+    "drizzle-kit": "catalog:",
+    "typescript": "catalog:",
+    "vitest": "catalog:"
+  }
+}

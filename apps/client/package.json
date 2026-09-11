@@ -1,0 +1,39 @@
+{
+  "name": "@website-starter/client",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt dev",
+    "build": "nuxt build",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "typecheck": "nuxt typecheck",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "@lucide/vue": "catalog:",
+    "@vueuse/core": "catalog:",
+    "@website-starter/shared": "workspace:*",
+    "class-variance-authority": "catalog:",
+    "clsx": "catalog:",
+    "nuxt": "catalog:",
+    "reka-ui": "catalog:",
+    "tailwind-merge": "catalog:",
+    "vue": "catalog:",
+    "vue-router": "catalog:",
+    "vue-sonner": "catalog:"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "catalog:",
+    "@types/node": "catalog:",
+    "@vueuse/nuxt": "catalog:",
+    "shadcn-nuxt": "catalog:",
+    "tailwindcss": "catalog:",
+    "tw-animate-css": "catalog:",
+    "typescript": "catalog:",
+    "vitest": "catalog:",
+    "vue-tsc": "catalog:"
+  }
+}

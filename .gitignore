@@ -1,0 +1,21 @@
+node_modules
+.DS_Store
+dist
+logs
+*.log
+.eslintcache
+
+# build outputs
+.nuxt
+.output
+.nitro
+.data
+.cache
+build
+coverage
+*.tsbuildinfo
+
+# env
+.env
+.env.*
+!.env.example

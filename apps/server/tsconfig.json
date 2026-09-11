@@ -1,0 +1,22 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "incremental": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "module": "nodenext",
+    "moduleResolution": "nodenext",
+    "paths": {
+      "#/*": ["./src/*"]
+    },
+    "resolvePackageJsonExports": true,
+    "types": ["vitest/globals", "node"],
+    "strictPropertyInitialization": false,
+    "declaration": true,
+    "outDir": "./dist",
+    "removeComments": true,
+    "sourceMap": true,
+    "allowSyntheticDefaultImports": true,
+    "verbatimModuleSyntax": false
+  }
+}
